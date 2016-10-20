@@ -8,7 +8,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "tknerr/baseimage-ubuntu-16.04"
   config.vm.hostname = "docker-kit"
-  config.vm.provision "docker"
+  config.vm.provision "docker" do |docker|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
